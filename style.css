@@ -113,6 +113,23 @@ main{
             }
         }
     }
+    & >.local{
+        width: 100%;
+        background-color: #ff000000;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        
+        & >a>img{
+            border-bottom: 2px solid var(--cor2);
+            filter: drop-shadow(0 0 10px #000000);
+            transition: 500ms;
+}
+        & >a>img:hover{
+            filter: drop-shadow(0 0 10px #f39275);
+            border-bottom: 2px solid #12d600;
+        }
+    }
     h1.chamado{
         font-size: 30px;
         color: white;
